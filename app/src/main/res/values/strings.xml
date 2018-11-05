@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">xingji</string>
+    <string name="title_activity_run_time_annotation">RunTimeAnnotation</string>
 </resources>
