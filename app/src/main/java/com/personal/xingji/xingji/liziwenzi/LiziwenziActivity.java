@@ -14,9 +14,7 @@ import com.personal.xingji.xingji.liziwenzi.realaction.ColorValue;
 import com.personal.xingji.xingji.liziwenzi.realaction.LiZiViewFactory;
 import com.personal.xingji.xingji.liziwenzi.realaction.TextSizeValue;
 import com.personal.xingji.xingji.liziwenzi.realaction.TextValue;
-import com.yasic.library.particletextview.MovingStrategy.RandomMovingStrategy;
-import com.yasic.library.particletextview.Object.ParticleTextViewConfig;
-import com.yasic.library.particletextview.View.ParticleTextView;
+
 
 public class LiziwenziActivity extends AppCompatActivity {
 
