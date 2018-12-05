@@ -8,4 +8,8 @@
     tools:context=".bangbangtang.Bangbangtang"
     tools:showIn="@layout/activity_bangbangtang">
 
+    <com.personal.xingji.xingji.bangbangtang.view.BangBangTangView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </android.support.constraint.ConstraintLayout>

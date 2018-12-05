@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.personal.xingji.xingji.bangbangtang.Bangbangtang;
 import com.personal.xingji.xingji.liziwenzi.LiziwenziActivity;
 import com.personal.xingji.xingji.runtimeanntation.RunTimeAnnotationActivity;
 
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     private String []items = new String[]{"annotation反射RunTime方法",
             "粒子文字",
-            "扩展的棒棒糖效果",
+            "棒棒糖效果",
             "待定",
             "待定",
             "待定",
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             "待定",
             "待定"};
     private Class []itemActivities = new Class[]{RunTimeAnnotationActivity.class,
-            LiziwenziActivity.class};
+            LiziwenziActivity.class,Bangbangtang.class};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
