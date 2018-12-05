@@ -3,8 +3,8 @@
     package="com.personal.xingji.xingji">
 
     <application
-        android:fullBackupContent="false"
         android:allowBackup="true"
+        android:fullBackupContent="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -20,7 +20,15 @@
         <activity
             android:name=".runtimeanntation.RunTimeAnnotationActivity"
             android:label="@string/title_activity_run_time_annotation"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".liziwenzi.LiziwenziActivity"
+            android:label="@string/title_activity_liziwenzi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bangbangtang.Bangbangtang"
+            android:label="@string/title_activity_bangbangtang"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

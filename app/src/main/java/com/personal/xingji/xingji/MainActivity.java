@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.personal.xingji.xingji.liziwenzi.LiziwenziActivity;
 import com.personal.xingji.xingji.runtimeanntation.RunTimeAnnotationActivity;
 
 
@@ -20,8 +21,19 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     GridView grid_view;
 
-    private String []items = new String[]{"annotation反射RunTime方法","待定","待定","待定","待定","待定","待定","待定","待定","待定","待定"};
-    private Class []itemActivities = new Class[]{RunTimeAnnotationActivity.class};
+    private String []items = new String[]{"annotation反射RunTime方法",
+            "粒子文字",
+            "扩展的棒棒糖效果",
+            "待定",
+            "待定",
+            "待定",
+            "待定",
+            "待定",
+            "待定",
+            "待定",
+            "待定"};
+    private Class []itemActivities = new Class[]{RunTimeAnnotationActivity.class,
+            LiziwenziActivity.class};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
