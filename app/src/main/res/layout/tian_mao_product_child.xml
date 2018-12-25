@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    >
+    
+    <ImageView
+        android:id="@+id/img_tian_mao_product_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:minWidth="100dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/tian_mao_camera"/>
+
+    <TextView
+        android:layout_below="@+id/img_tian_mao_product_child"
+        android:id="@+id/tv_shop_name_tian_mao_product_child"
+        android:layout_marginTop="-20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="#CEA2B1"
+        android:text="汀伊兰"/>
+
+    <TextView
+        android:layout_below="@+id/tv_shop_name_tian_mao_product_child"
+        android:id="@+id/tv_product_name_tian_mao_product_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_marginTop="20dp"
+        android:text="情侣睡袍秋冬浴袍睡衣男女加厚绒法兰珊瑚绒家情侣睡袍秋冬浴袍睡衣男女加厚绒法兰珊瑚绒家情侣睡袍秋冬浴袍睡衣男女加厚绒法兰珊瑚绒家情侣睡袍秋冬浴袍睡衣男女加厚绒法兰珊瑚绒家"/>
+
+        <TextView
+            android:layout_below="@+id/tv_product_name_tian_mao_product_child"
+            android:id="@+id/tv_product_coupon_tian_mao_product_child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#CC1D3A"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_border"
+            android:text="3元券"
+            />
+
+        <RelativeLayout
+            android:id="@+id/ll_product_price_tian_mao_product_child"
+            android:layout_below="@+id/tv_product_coupon_tian_mao_product_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_product_price_tian_mao_product_child"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="#CC1D3A"
+                android:text="￥39"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#CC1D3A"
+                android:background="@drawable/text_radius_border"
+                android:layout_alignParentRight="true"
+                android:text="看相似"/>
+
+        </RelativeLayout>
+
+    <View
+        android:id="@+id/v_product_tian_mao_product_child"
+        android:layout_below="@+id/ll_product_price_tian_mao_product_child"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EAEAEA"
+        />
+
+    <TextView
+        android:id="@+id/tv_product_comment_tian_mao_product_child"
+        android:layout_below="@+id/v_product_tian_mao_product_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="推荐：质量很好 很舒服"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+</RelativeLayout>

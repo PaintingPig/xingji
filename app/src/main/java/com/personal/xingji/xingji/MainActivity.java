@@ -16,6 +16,8 @@ import android.widget.Toast;
 import com.personal.xingji.xingji.bangbangtang.Bangbangtang;
 import com.personal.xingji.xingji.liziwenzi.LiziwenziActivity;
 import com.personal.xingji.xingji.runtimeanntation.RunTimeAnnotationActivity;
+import com.personal.xingji.xingji.tianmao.TianMaoMainActivity;
+import com.personal.xingji.xingji.watertext.WaterTextActivity;
 
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
@@ -25,8 +27,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private String []items = new String[]{"annotation反射RunTime方法",
             "粒子文字",
             "棒棒糖效果",
-            "待定",
-            "待定",
+            "波浪文字",
+            "天猫页面",
             "待定",
             "待定",
             "待定",
@@ -34,7 +36,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             "待定",
             "待定"};
     private Class []itemActivities = new Class[]{RunTimeAnnotationActivity.class,
-            LiziwenziActivity.class,Bangbangtang.class};
+            LiziwenziActivity.class,
+            Bangbangtang.class,
+            WaterTextActivity.class,
+            TianMaoMainActivity.class};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

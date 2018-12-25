@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_actionbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light">
+    <RelativeLayout
+        android:id="@+id/rl_actionbar_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+    <ImageButton
+        android:id="@+id/img_bt_scan"
+        android:scaleType="fitXY"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/tian_mao_scan"
+        android:layout_alignParentLeft="true"
+        />
+
+    <ImageButton
+        android:id="@+id/img_bt_message"
+        android:scaleType="fitXY"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/tian_mao_message"
+        android:layout_alignParentRight="true"
+        />
+    <ImageButton
+        android:id="@+id/img_bt_qr_code"
+        android:scaleType="fitXY"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/tian_mao_qr_code"
+        android:layout_toLeftOf="@id/img_bt_message"
+        />
+
+        <TextView
+            android:id="@+id/img_bt_title"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/img_bt_qr_code"
+            android:layout_toRightOf="@+id/img_bt_scan"
+            android:gravity="center"
+            android:text="天猫"
+            android:textColor="@android:color/white"
+            app:fontFamily="casual" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_actionbar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp">
+
+
+
+        <ImageButton
+            android:id="@+id/img_bt_search"
+            android:scaleType="fitXY"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/tian_mao_search"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+
+        <ImageButton
+            android:id="@+id/img_bt_camera"
+            android:scaleType="fitXY"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/tian_mao_camera"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/img_bt_camera"
+                android:layout_toRightOf="@+id/img_bt_search"
+                android:paddingLeft="10dp"
+                android:hint="双12胡爆款好货"
+                android:background="@null"
+                />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
