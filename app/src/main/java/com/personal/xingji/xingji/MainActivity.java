@@ -1,5 +1,6 @@
 package com.personal.xingji.xingji;
 
+import android.Manifest;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +14,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.dq.android.tool.ToolFactory;
+import com.dq.android.tool.Version;
+import com.dq.android.tool.permission.DQPermission;
 import com.personal.xingji.xingji.bangbangtang.Bangbangtang;
 import com.personal.xingji.xingji.liziwenzi.LiziwenziActivity;
 import com.personal.xingji.xingji.runtimeanntation.RunTimeAnnotationActivity;
@@ -47,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         grid_view = findViewById(R.id.grid_view);
         grid_view.setAdapter(new GridViewAdapter());
         grid_view.setOnItemClickListener(this);
+        requestPermission();
     }
 
     @Override
@@ -103,6 +108,24 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         }
 
+    }
+
+    private void requestPermission(){
+        ToolFactory.init(getApplication());
+        DQPermission.getInstance().requestPermission(this,true, new DQPermission.OnPermissionGrantCallback() {
+            @Override
+            public void onSuccess() {
+
+            }
+
+            @Override
+            public void onFail(String[] unGrantedPermissions) {
+                for(String srt : unGrantedPermissions){
+                    Log.e("dingqiang","unGrantedPermissions ==  " + srt);
+
+                }
+            }
+        }, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA);
     }
 
 }

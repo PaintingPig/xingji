@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--app text color-->
+    <color name="textcolor_larger">#7D7D7D</color>
+    <color name="textcolor_normal">#808080</color>
+    <color name="textcolor_normal_other">#333333</color>
+    <color name="textcolor_small">#666666</color>
+    <color name="textcolor_small_other">#898989</color>
+    <color name="textcolor_small_onother">#cccccc</color>
+
+    <!--app list item color-->
+    <color name="list_item_color">#ffffff</color>
+    <color name="list_item_color_pressed">#f7f7f7</color>
+    <color name="list_item_divider_color">#d6d6d6</color>
+
+    <!--app normal color-->
+    <color name="app_white">#ffffff</color>
+    <color name="app_black">#ff000000</color>
+    <color name="app_transparent">#00000000</color>
+    <color name="app_translucent">#7f000000</color>
+
+    <color name="window_background_color">#F5F5F9</color>
+
+    <!--app button color reference-->
+    <color name="button_color_normal">#3495F9</color>
+    <color name="button_color_pressed">#eeeeee</color>
+</resources>

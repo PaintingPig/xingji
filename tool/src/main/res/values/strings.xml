@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tool</string>
+
+    <string name="common_dialog_tips">提示</string>
+    <string name="common_dialog_cancel">取消</string>
+    <string name="common_dialog_ok">确定</string>
+
+    <string name="permission">去授权</string>
+    <string name="permission_tip">您需要同意以下权限才可以使用本应用</string>
+</resources>
